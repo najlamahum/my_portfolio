@@ -12,7 +12,13 @@
   visibility: hidden !important;
   opacity: 0 !important;
 }
-body { font-family: Inter, sans-serif; }
+
+/* Ensure proper styling loads */
+body { 
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 /* Fix link styling for case study card */
 .div-block-31.w-inline-block {
@@ -22,9 +28,20 @@ body { font-family: Inter, sans-serif; }
 
 .div-block-31.w-inline-block:hover {
   text-decoration: none !important;
-/* Ensure proper styling loads */
-body { font-family: Inter, sans-serif; }
-</style>
+}
+
+/* Make image fill container */
+.div-block-32 {
+  height: 400px;
+  overflow: hidden;
+}
+
+.div-block-32 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>>
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
