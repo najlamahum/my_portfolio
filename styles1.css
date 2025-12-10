@@ -3797,12 +3797,13 @@ textarea.w-input, textarea.w-select {
   flex-grow: 1 !important;
 }
 
-div-block-58 {
-  margin-top: 20px !important;
+.div-block-58 {
+  margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
+/* Reduce bottom spacing of the subtitle to match the title spacing */
 .sub_title_grey {
-  margin-bottom: 10px !important;
-  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 20px !important;
 }
