@@ -2598,6 +2598,20 @@ textarea.w-input, textarea.w-select {
 .text-block-34.lofi_title {
   padding-bottom: 20px;
 }
+#reflection {
+  text-align: left !important;
+}
+
+#reflection + .div-block-62 {
+  text-align: left !important;
+  align-items: flex-start !important; /* only matters if it's flex */
+}
+
+#reflection + .div-block-62 .text-block-34 {
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
 
 .div-block-23 {
   box-sizing: border-box;
