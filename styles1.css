@@ -4408,5 +4408,43 @@ body[data-wf-page="68e6a7a07b2c415d20bbc104"] .div-block-57 {
   .final_design .div-block-47 {
     order: unset !important;
   }
+css/* Flipped layout - image on right, text on left */
+.final_design.flipped {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
 }
+
+/* Right-align the text in flipped version */
+.final_design.flipped .div-block-47 {
+  text-align: right;
+}
+
+.final_design.flipped .list {
+  list-style-position: inside;
+  text-align: right;
+}
+
+/* Regular layout */
+.final_design {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.div-block-46, .div-block-47 {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .final_design, .final_design.flipped {
+    flex-direction: column;
+  }
+  .final_design.flipped .div-block-47,
+  .final_design.flipped .list {
+    text-align: left;
+  }
 }
