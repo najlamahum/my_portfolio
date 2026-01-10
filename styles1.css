@@ -4369,4 +4369,44 @@ body[data-wf-page="68e6a7a07b2c415d20bbc104"] .div-block-57 {
     height: auto !important;
     object-fit: contain !important;
   }
+  /* Zigzag layout for final designs */
+.final_design {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+/* Default: Image on left, text on right */
+.final_design .div-block-46 {
+  flex: 0 0 auto;
+  order: 1;
+}
+
+.final_design .div-block-47 {
+  flex: 1;
+  order: 2;
+}
+
+/* Second design: Flip it! Image on right, text on left */
+.final_design:nth-child(2) .div-block-46 {
+  order: 2;
+}
+
+.final_design:nth-child(2) .div-block-47 {
+  order: 1;
+}
+
+/* Responsive: Stack vertically on mobile */
+@media (max-width: 991px) {
+  .final_design {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .final_design .div-block-46,
+  .final_design .div-block-47 {
+    order: unset !important;
+  }
+}
 }
